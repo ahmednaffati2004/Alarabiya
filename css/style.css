@@ -6755,3 +6755,74 @@ p.create{
     font-size: 18px;
 }
 
+div #google_translate_element{
+    margin-left: 8px;
+    margin-right: 0px;
+    width: auto;
+}
+iframe.goog-te-menu-iframe.skiptranslate {
+    margin-top: 2px;
+    width: 175px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(218, 219, 227, 0.776);
+    animation: bounce .6s ease-out;
+ }
+   
+.goog-te-gadget-simple {
+ background-color: #779BD0 !important;
+ white-space: nowrap !important;
+ border-color: rgb(33, 45, 111) !important;
+ border-radius: 4px !important;
+ font-family: font_2 !important;;
+ font-size: 14px !important;
+}
+   
+.goog-te-menu-value {
+text-decoration: none !important;
+color: #fffafa !important;
+float: right;
+vertical-align:middle!important;
+}
+   
+.goog-te-menu-value span {
+color: #fffafa !important;
+text-decoration: none !important;
+ }
+   
+.goog-te-menu-value:hover {
+text-decoration: none !important;
+color: #fffafa !important;
+ }
+   
+.goog-te-banner-iframe {
+color: #fffafa !important;
+display: none !important;
+z-index: 6;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed{
+color: #000000 !important;
+text-decoration: none !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span{
+    color: #000000 !important;
+}
+
+.goog-te-gadget-icon {
+background: url("/Placehold/images/translate.svg") 0 0 no-repeat !important;
+}
+
+body > .skiptranslate > iframe.skiptranslate {
+display: none !important;
+visibility: hidden !important;
+background:transparent !important;
+overflow: hidden;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+} 
+body {
+    top: 0px !important; 
+}

@@ -510,34 +510,7 @@ jQuery(document).ready(function ($) {
 });
 
 
-// theme-icon/moon
-let lightmode = localStorage.getItem('light-d');
-    const lightmodeToggle = document.querySelector('#theme-icon');
-    const enableLightMode = () => {
-        document.body.classList.add('light-d');
-        localStorage.setItem('light-d', 'enabled');
-        lightmodeToggle.src = 'images/moon.png';
-    }
-    
-    const disablelightmode = () => {
-        document.body.classList.remove('light-d');
-        localStorage.setItem('light-d', null);
-        lightmodeToggle.src = 'images/sun.png';
-    }
 
-    if (lightmode === 'enabled') {
-        enableLightMode();
-    }
-
-    lightmodeToggle.addEventListener('click', () => {
-        lightmode = localStorage.getItem('light-d'); 
-
-        if (lightmode !== 'enabled') {
-            enableLightMode();
-        } else {  
-            disablelightmode();
-        }
-    });
 
 
     // Preloader
@@ -545,3 +518,93 @@ $(window).on('load', function () {
     $("body").addClass("page-loaded");
     
 });
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+  }
+
+  $('document').ready(function () {
+
+
+    // RESTYLE THE DROPDOWN MENU
+$('#google_translate_element').on("click", function () {
+
+    // Change font family and color
+    $("iframe").contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2 *")
+        .css({
+            'color': '#544F4B',
+            'font-family': 'Roboto',
+                            'width':'100%'
+        });
+    // Change menu's padding
+    $("iframe").contents().find('.goog-te-menu2-item-selected').css ('display', 'none');
+        
+            // Change menu's padding
+    $("iframe").contents().find('.goog-te-menu2').css ('padding', '0px');
+  
+    // Change the padding of the languages
+    $("iframe").contents().find('.goog-te-menu2-item div').css('padding', '20px');
+  
+    // Change the width of the languages
+    $("iframe").contents().find('.goog-te-menu2-item').css('width', '100%');
+    $("iframe").contents().find('td').css('width', '100%');
+  
+    // Change hover effects
+    $("iframe").contents().find(".goog-te-menu2-item div").hover(function () {
+        $(this).css('background-color', '#4385F5').find('span.text').css('color', 'white');
+    }, function () {
+        $(this).css('background-color', 'white').find('span.text').css('color', '#544F4B');
+    });
+
+    // Change Google's default blue border
+    $("iframe").contents().find('.goog-te-menu2').css('border', 'none');
+
+    // Change the iframe's box shadow
+    $(".goog-te-menu-iframe").css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)');
+    
+  
+  
+    // Change the iframe's size and position?
+    $(".goog-te-menu-iframe").css({
+        'height': '100%',
+        'width': '100%',
+        'top': '0px'
+    });
+    // Change iframes's size
+    $("iframe").contents().find('.goog-te-menu2').css({
+        'height': '100%',
+        'width': '100%'
+    });
+ });
+});
+
+(function() {
+ var $previewIframe = $('#preview-iframe');
+    function restyleDropdown() {
+
+      var $dropdownIframe = $previewi=Iframe.length === 1
+ 
+     ? $previewIframe.contents().find('.goog-te-menu-iframe.skiptranslate')
+ 
+     : $('.goog-te-menu-iframe.skiptranslate');
+ 
+      if($dropdownIframe.length) {
+ 
+       $dropdownIframe
+ 
+          .contents()
+ 
+          .find('head')
+ 
+          .append('<link rel="stylesheet" type="text/css" href="//p4.zdassets.com/hc/theme_assets/549775/200068704/google-translate-override.css"/>');
+ 
+      } else {
+ 
+       setTimeout(restyleDropdown, 100);
+ 
+      }
+ 
+    }
+ 
+    restyleDropdown();
+ 
+ })();
