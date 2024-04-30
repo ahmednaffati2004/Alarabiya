@@ -6834,7 +6834,20 @@ body {
 }
 
 .owl-carousele {
-max-width: 45%;
-width: auto;
-height: auto;
-}
+    max-width: 45%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Horizontally center the images */
+    align-items: center;
+  }
+
+  .client-slider.owl-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .owl-carousele.img-fluid {
+    margin: auto;
+  }

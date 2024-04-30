@@ -151,35 +151,33 @@ jQuery(document).ready(function ($) {
     // Client Slider
     if ($(".client-slider")[0]){
         $('.client-slider.owl-carousel').owlCarousel({
-            items:5,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: false,
-            dots: false,
-            responsive:{
+     loop:true, // Add this option to make it loop infinitely
+     margin:10,
+     nav:false,
+     autoplay:true,
+     autoplayTimeout:2000,
+     autoplayHoverPause:true,
+     responsive:{
                 0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                800:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        });
+                items:1
+                      },
+                 600:{
+                     items:3
+                 },
+                 1000:{
+                     items:5
+                 }
+              }
+         });
     }
 
     // Client Review Slider
     if ($(".client-review-slider")[0]){
         $('.client-review-slider.owl-carousel').owlCarousel({
-            items:1,
+            items:Infinity,
             autoplay: true,
             autoplayTimeout: 3000,
-            autoplayHoverPause: false,
+            autoplayHoverPause: true,
             dots: true,
         });
     }
@@ -188,16 +186,15 @@ jQuery(document).ready(function ($) {
     if ($(".c-slider")[0]){
         $('.c-slider.owl-carousel').owlCarousel({
             loop: true,
-            items:1,
-            dots: false,
+            items:Infinity,
+            dots: true,
             autoplay: true,
             autoplayTimeout: 3000,
-            autoplayHoverPause: false,
+            autoplayHoverPause: true,
             nav:true,
-            navText: ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
             responsive:{
                 0:{
-                    nav: false,
+                    nav: true,
                 },
                 768:{
                     nav: true
@@ -576,20 +573,19 @@ $('#google_translate_element').on("click", function () {
     });
  });
 });
-
 (function() {
- var $previewIframe = $('#preview-iframe');
+ var $previewiframe = $('#preview-iframe');
     function restyleDropdown() {
 
-      var $dropdownIframe = $previewi=Iframe.length === 1
+      var $dropdowniframe = $previewi=iframe.length === 1
  
-     ? $previewIframe.contents().find('.goog-te-menu-iframe.skiptranslate')
+     ? $previewiframe.contents().find('.goog-te-menu-iframe.skiptranslate')
  
      : $('.goog-te-menu-iframe.skiptranslate');
  
-      if($dropdownIframe.length) {
+      if($dropdowniframe.length) {
  
-       $dropdownIframe
+       $dropdowniframe
  
           .contents()
  
@@ -608,3 +604,8 @@ $('#google_translate_element').on("click", function () {
     restyleDropdown();
  
  })();
+
+ 
+
+
+ 
