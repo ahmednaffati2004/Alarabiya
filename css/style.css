@@ -6810,13 +6810,13 @@ text-decoration: none !important;
 }
 
  .goog-te-gadget-icon {
-background:url('/Placehold/images/translate.svg') 0 0 no-repeat !important;
+background:url('http://127.0.0.1:5500/Placehold/images/translate.svg') 0 0 no-repeat !important;
 }  
 
 .goog-te-gadget img {
 vertical-align: middle;
 border: none;
-background:url('/Placehold/images/translate.svg') 0 0 no-repeat !important;
+background:url('http://127.0.0.1:5500/Placehold/images/translate.svg') 0 0 no-repeat !important;
 }
 
 body > .skiptranslate > iframe.skiptranslate {
