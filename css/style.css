@@ -6810,7 +6810,7 @@ text-decoration: none !important;
     color: #000000 !important;
 }
 
- .goog-te-gadget-icon {
+.goog-te-gadget-icon {
 background:url("https://raw.githack.com/ahmednaffati2004/Alarabiya/main/images/translate.svg") 0 0 no-repeat !important;
 }   
  
@@ -6826,10 +6826,15 @@ visibility: hidden !important;
 background:transparent !important;
 overflow: hidden;
 }
-
 .goog-te-banner-frame.skiptranslate {
     display: none !important;
 } 
 body {
     top: 0px !important; 
 }
+
+.owl-carousele {
+    max-width: 45%;
+    width: auto;
+    height: auto;
+  }
